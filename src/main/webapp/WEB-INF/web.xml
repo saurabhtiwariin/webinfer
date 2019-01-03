@@ -56,4 +56,8 @@
     <param-name>spring.profiles.default</param-name>
     <param-value>prod</param-value>
   </context-param>
+  <mime-mapping>
+        <extension>.</extension>
+        <mime-type>text/plain</mime-type>
+    </mime-mapping>
 </web-app>
