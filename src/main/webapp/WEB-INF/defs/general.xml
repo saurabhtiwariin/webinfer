@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- GENERAL defination to extend -->
+	<definition name="common" template="/WEB-INF/layout/classic.jsp"> 
+		<put-attribute name="title" value="WebInfer" />
+	</definition> 
+	<definition name="mytaglib" template="/WEB-INF/layout/taglib.jsp" /> 
+	<!-- general defination to extend COMPLETE -->
+
+	<!-- error package -->
+
+	<definition name="badUser" template="/WEB-INF/jsp/error/badUser.jsp" />
+	<definition name="emailError" template="/WEB-INF/jsp/error/emailError.jsp" />
+	<definition name="logout" template="/WEB-INF/jsp/ext/logout.jsp" />
+	<definition name="invalidSession" template="/WEB-INF/jsp/ext/invalidSession.jsp" />
+	<definition name="updatePassword" template="/WEB-INF/jsp/ext/updatePassword.jsp" />
+	<!-- error package -->
+
+	<!-- pages -->
+
+	<definition name="index" extends="common">
+		<put-attribute name="body" value="/WEB-INF/jsp/ext/index.jsp" />
+	</definition>
+
+	<definition name="about" extends="common">
+		<put-attribute name="title" value="About us" />
+		<put-attribute name="body" value="/WEB-INF/jsp/ext/about.jsp" />
+	</definition>
+
+	<definition name="program" extends="common">
+		<put-attribute name="title" value="Business Plan" />
+		<put-attribute name="body" value="/WEB-INF/jsp/ext/program.jsp" />
+	</definition>
+
+	<definition name="contactUs" extends="common">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body" value="/WEB-INF/jsp/ext/contactUs.jsp" />
+	</definition>
+
+
+	<definition name="faq" extends="common">
+		<put-attribute name="title" value="FAQ" />
+		<put-attribute name="body" value="/WEB-INF/jsp/ext/faq.jsp" />
+	</definition>
+
+	<!-- before login complete -->
+
+
+	<definition name="userRegister" template="/WEB-INF/jsp/userRegister.jsp" />
+
+	<!-- <definition name="forgetPassword" template="/WEB-INF/jsp/ext/forgetPassword.jsp" 
+		/> -->
+	<definition name="forgetPassword" extends="common">
+		<put-attribute name="title" value="Forget Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/ext/forgetPassword.jsp" />
+		<put-attribute name="current" value="forgetPassword" />
+	</definition> 
+	 
+	<definition name="complaint" extends="common">
+		<put-attribute name="title" value="Contact US" />
+		<put-attribute name="body" value="/WEB-INF/jsp/ext/contactUs.jsp" />
+		<put-attribute name="current" value="complaint" />
+	</definition> 
+
+	<definition name="user-details" extends="common">
+		<put-attribute name="title" value="User Details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-details.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+
+	<definition name="account" extends="common">
+		<put-attribute name="title" value="User Account" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-account.jsp" />
+		<put-attribute name="current" value="account" />
+	</definition> 
+
+</tiles-definitions>

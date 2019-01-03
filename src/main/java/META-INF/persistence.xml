@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="MLMHelp">
+		<class>cz.jiripinkas.jba.entity.Accept</class>
+		<class>cz.jiripinkas.jba.entity.BankDetails</class>
+		<class>cz.jiripinkas.jba.entity.Commit</class>
+		<class>cz.jiripinkas.jba.entity.Complaint</class>
+		<class>cz.jiripinkas.jba.entity.Role</class>
+		<class>cz.jiripinkas.jba.entity.SecurityQuestion</class>
+		<class>cz.jiripinkas.jba.entity.Status</class>
+		<class>cz.jiripinkas.jba.entity.User</class>
+		<class>cz.jiripinkas.jba.entity.FileUpload</class>
+		<class>cz.jiripinkas.jba.entity.Transaction</class>
+		<class>cz.jiripinkas.jba.entity.VerificationToken</class>
+		<class>cz.jiripinkas.jba.entity.PasswordResetToken</class>
+		<class>cz.jiripinkas.jba.entity.OTP</class>
+	</persistence-unit>
+</persistence>
