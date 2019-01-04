@@ -8,6 +8,9 @@
 	<definition name="common" template="/WEB-INF/layout/classic.jsp"> 
 		<put-attribute name="title" value="WebInfer" />
 	</definition> 
+	<definition name="scaffold" template="/WEB-INF/layout/scaffold.jsp"> 
+		<put-attribute name="title" value="WebInfer" />
+	</definition> 
 	<definition name="mytaglib" template="/WEB-INF/layout/taglib.jsp" /> 
 	<!-- general defination to extend COMPLETE -->
 
@@ -20,63 +23,106 @@
 	<definition name="updatePassword" template="/WEB-INF/jsp/ext/updatePassword.jsp" />
 	<!-- error package -->
 
-	<!-- pages -->
 
+	<!-- scaffold template pages -->
+
+	<definition name="index" extends="scaffold">
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/index.jsp" />
+	</definition>
+	<definition name="about" extends="scaffold">
+		<put-attribute name="title" value="About us" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/about.jsp" />
+	</definition>
+	<definition name="program" extends="scaffold">
+		<put-attribute name="title" value="Business Plan" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/program.jsp" />
+	</definition>
+	<definition name="contactUs" extends="scaffold">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/contactUs.jsp" />
+	</definition>
+	<definition name="faq" extends="scaffold">
+		<put-attribute name="title" value="FAQ" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/faq.jsp" />
+	</definition>
+	<!-- before login complete -->
+	<definition name="userRegister" template="/WEB-INF/jsp/scaffold/userRegister.jsp" />
+	<!-- <definition name="forgetPassword" template="/WEB-INF/jsp/scaffold/ext/forgetPassword.jsp" 
+		/> -->
+	<definition name="forgetPassword" extends="scaffold">
+		<put-attribute name="title" value="Forget Password" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/scaffold/ext/forgetPassword.jsp" />
+		<put-attribute name="current" value="forgetPassword" />
+	</definition> 
+	<definition name="complaint" extends="scaffold">
+		<put-attribute name="title" value="Contact US" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/contactUs.jsp" />
+		<put-attribute name="current" value="complaint" />
+	</definition> 
+	<definition name="user-details" extends="scaffold">
+		<put-attribute name="title" value="User Details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/user-details.jsp" />
+		<put-attribute name="current" value="users" />
+	</definition>
+	<definition name="account" extends="scaffold">
+		<put-attribute name="title" value="User Account" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/user-account.jsp" />
+		<put-attribute name="current" value="account" />
+	</definition> 
+	<!-- scaffold template pages ends-->
+
+
+
+
+
+
+	<!-- common template pages --><!-- 
 	<definition name="index" extends="common">
 		<put-attribute name="body" value="/WEB-INF/jsp/ext/index.jsp" />
 	</definition>
-
 	<definition name="about" extends="common">
 		<put-attribute name="title" value="About us" />
 		<put-attribute name="body" value="/WEB-INF/jsp/ext/about.jsp" />
 	</definition>
-
 	<definition name="program" extends="common">
 		<put-attribute name="title" value="Business Plan" />
 		<put-attribute name="body" value="/WEB-INF/jsp/ext/program.jsp" />
 	</definition>
-
 	<definition name="contactUs" extends="common">
 		<put-attribute name="title" value="Contact Us" />
 		<put-attribute name="body" value="/WEB-INF/jsp/ext/contactUs.jsp" />
 	</definition>
-
-
 	<definition name="faq" extends="common">
 		<put-attribute name="title" value="FAQ" />
 		<put-attribute name="body" value="/WEB-INF/jsp/ext/faq.jsp" />
 	</definition>
-
-	<!-- before login complete -->
-
-
+	before login complete
 	<definition name="userRegister" template="/WEB-INF/jsp/userRegister.jsp" />
-
-	<!-- <definition name="forgetPassword" template="/WEB-INF/jsp/ext/forgetPassword.jsp" 
-		/> -->
+	<definition name="forgetPassword" template="/WEB-INF/jsp/ext/forgetPassword.jsp" 
+		/>
 	<definition name="forgetPassword" extends="common">
 		<put-attribute name="title" value="Forget Password" />
 		<put-attribute name="body"
 			value="/WEB-INF/jsp/ext/forgetPassword.jsp" />
 		<put-attribute name="current" value="forgetPassword" />
 	</definition> 
-	 
 	<definition name="complaint" extends="common">
 		<put-attribute name="title" value="Contact US" />
 		<put-attribute name="body" value="/WEB-INF/jsp/ext/contactUs.jsp" />
 		<put-attribute name="current" value="complaint" />
 	</definition> 
-
 	<definition name="user-details" extends="common">
 		<put-attribute name="title" value="User Details" />
 		<put-attribute name="body" value="/WEB-INF/jsp/user-details.jsp" />
 		<put-attribute name="current" value="users" />
 	</definition>
-
 	<definition name="account" extends="common">
 		<put-attribute name="title" value="User Account" />
 		<put-attribute name="body" value="/WEB-INF/jsp/user-account.jsp" />
 		<put-attribute name="current" value="account" />
 	</definition> 
+	common template pages ends -->
+
 
 </tiles-definitions>
