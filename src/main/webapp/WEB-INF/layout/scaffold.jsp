@@ -142,7 +142,7 @@
 									</ul></li>
 								<li class="dropdown warning"><a
 									href='<spring:message
-								code='index.app.url.linkedin' />'><i
+								code='index.app.url.linkedin' />' target="_blank"><i
 										class="icon-camera icon-white"></i> Portfolio</a>
 									<ul class="dropdown-menu">
 										<!--   <li class="dropdown"><a href="#">Portfolio type 1</a>
@@ -252,9 +252,9 @@
 						</form>
 						<ul class="social_small">
 							<li class="facebook first"><a href="<spring:message
-								code='index.app.url.facebook' />"  title="Facebook">Facebook</a></li>
+								code='index.app.url.facebook' />" target="_blank" title="Facebook">Facebook</a></li>
 						    <li class="linkedin"><a href="<spring:message
-								code='index.app.url.linkedin' />" title="LinkedIn">LinkedIn</a></li>
+								code='index.app.url.linkedin' />" target="_blank" title="LinkedIn">LinkedIn</a></li>
 							
 							<!-- <li class="twitt"><a href="#" title="Twitter">Twitter</a></li>
 							<li class="googleplus"><a href="#" title="google plus">Google
