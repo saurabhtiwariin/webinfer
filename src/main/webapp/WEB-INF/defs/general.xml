@@ -29,22 +29,27 @@
 	<definition name="index" extends="scaffold">
 		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/index.jsp" />
 	</definition>
+	<definition name="services" extends="scaffold">
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/services.jsp" />
+	</definition>
 	<definition name="about" extends="scaffold">
 		<put-attribute name="title" value="About us" />
-		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/about.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/about.jsp" />
 	</definition>
+	<definition name="contactUs" extends="scaffold">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/contact.jsp" />
+	</definition>
+	<definition name="faq" extends="scaffold">
+		<put-attribute name="title" value="FAQ" />
+		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/faq.jsp" />
+	</definition>
+	
 	<definition name="program" extends="scaffold">
 		<put-attribute name="title" value="Business Plan" />
 		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/program.jsp" />
 	</definition>
-	<definition name="contactUs" extends="scaffold">
-		<put-attribute name="title" value="Contact Us" />
-		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/contactUs.jsp" />
-	</definition>
-	<definition name="faq" extends="scaffold">
-		<put-attribute name="title" value="FAQ" />
-		<put-attribute name="body" value="/WEB-INF/jsp/scaffold/ext/faq.jsp" />
-	</definition>
+	
 	<!-- before login complete -->
 	<definition name="userRegister" template="/WEB-INF/jsp/scaffold/userRegister.jsp" />
 	<!-- <definition name="forgetPassword" template="/WEB-INF/jsp/scaffold/ext/forgetPassword.jsp" 

@@ -1237,11 +1237,11 @@ a.commentlink {
 .social_small li:hover {background-position: 0 -32px;}
 
 .facebook {background: url(../img/icons/social/fb.png) no-repeat;}
+.linkedin {background: url(../img/icons/social/linkedin.png) no-repeat;}
 .googleplus {background: url(../img/icons/social/google.png) no-repeat;}
 .dribbble {background: url(../img/icons/social/dribble.png) no-repeat;}
 .flickr {background: url(../img/icons/social/flickr.png) no-repeat;}
 .twitt {background: url(../img/icons/social/twitter.png) no-repeat;}
-
 
 /* twitter */
 .twitter ul{
@@ -1265,6 +1265,30 @@ a.commentlink {
     list-style: none;
 }
 .twitter li:last-child{border: none;}
+
+
+/* linkedin */
+.linkedin ul{
+	margin-left:0;
+	list-style:none;
+}
+
+.linkedin  img{
+    float: left;
+    margin-right: 15px;
+}
+.linkedin span.tweet_time{
+    display: block;
+    padding-bottom: 5px;
+
+}
+.linkedin li{
+    border-bottom: 1px dashed #efefef;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.linkedin li:last-child{border: none;}
 
 
 /* Subhead (other pages)
