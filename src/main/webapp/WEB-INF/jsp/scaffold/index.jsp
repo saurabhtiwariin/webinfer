@@ -15,10 +15,10 @@
 					<div id="slider" class="nivoSlider">
 						<img src="/resources/scaffold/assets/img/slides/nivo/banner.jpg"
 							data-thumb="/resources/scaffold/assets/img/slides/nivo/banner.jpg"
-							alt="" title="#htmlcaption1"/> <img
+							alt=""/> <img
 							src="/resources/scaffold/assets/img/slides/nivo/img2.jpeg"
 							data-thumb="/resources/scaffold/assets/img/slides/nivo/img2.jpeg"
-							alt=""   /> <img
+							alt=""/> <img
 							src="/resources/scaffold/assets/img/slides/nivo/img3.jpeg"
 							data-thumb="/resources/scaffold/assets/img/slides/nivo/img3.jpeg"
 							alt="" data-transition="slideInLeft" /> <img
