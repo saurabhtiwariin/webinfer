@@ -101,6 +101,9 @@
 								code='index.app.url.facebook' />" target="_blank"><i class="fa fa-facebook"></i></a></li>
           <li class="social-linkedin"><a href="<spring:message
 								code='index.app.url.linkedin' />" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+								
+          <li class="social-github"><a href="<spring:message
+								code='index.app.url.github' />" target="_blank"><i class="fa fa-github"></i></a></li>
      <!--      <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
           <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
       -->   </ul>
